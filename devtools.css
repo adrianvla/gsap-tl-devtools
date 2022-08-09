@@ -1,0 +1,82 @@
+
+        .tl-devtools{
+          position:absolute;
+          z-index:9999;
+          bottom:0;
+          margin: 0;
+          left:0;
+          width:100vw;
+          height:70px;
+          background:rgba(17, 17, 17, 0.5);
+          backdrop-filter:blur(10px);
+          display:flex;
+          align-items: center;
+          flex-direction: column;
+          cursor:auto !important;
+          font-family:Arial, Helvetica, sans-serif;
+          opacity:0.5;
+          transition:opacity 1s
+        }
+        .tl-devtools:hover{
+          opacity:1;
+        }
+        
+        .tl-devtools > .tl-devtools-p-c{
+          background:rgb(93, 93, 93);
+          height:clamp(15px, 15%, 20px);
+          width:95%;
+          height:50px;
+          display:flex;
+        }
+        .tl-devtools > .tl-devtools-p-c > .tl-devtools-p{
+          background:#91E600;
+          height:100%;
+          width:50%;
+          touch-action: manipulation; 
+          user-select: none;
+        
+        }
+        .tl-devtools > .tl-devtools-controls{
+          display:flex;
+          justify-content: space-between;
+          align-items:center;
+          flex-direction: row;
+          width:95%;
+          height:100%;
+        }
+        
+        .tl-devtools > .tl-devtools-controls > .tl-devtools-desc{
+        
+        }
+        .tl-devtools > .tl-devtools-controls > .tl-devtools-buttons{
+          height:100%;
+          display:flex;
+          width:50px;
+          align-items:center;
+          justify-content:center;
+          flex-direction:row;
+          touch-action: manipulation; 
+          user-select: none;
+        }
+        .tl-devtools > .tl-devtools-controls > .tl-devtools-buttons > .tl-devtools-button{
+          height:50px;
+          aspect-ratio: 1;
+          cursor:pointer;
+          background:#ccc;
+          color:#000;
+          display:flex;
+          justify-content: center;
+          align-items:center;
+          margin-left:1px;
+        }
+        .tl-devtools > .tl-devtools-controls > .tl-devtools-time{
+          font-family:'Courier New', Courier, monospace;
+          width:150px;
+        }
+        .tl-devtools > .tl-devtools-controls > .tl-devtools-buttons > .tl-devtools-seek{
+          width:50px;
+        
+        }
+        .tl-devtools > .tl-devtools-controls > .tl-devtools-buttons > .tl-devtools-select > select{
+          width:50px;
+        }
